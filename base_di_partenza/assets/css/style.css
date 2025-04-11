@@ -80,10 +80,15 @@ header {
   font: inherit;
 }
 
+section {
+  border-bottom: 1px solid #dbd8d8;
+  padding: 2.5em;
+}
+
 #section-title-flex {
   display: flex;
   align-items: center;
-  padding-block: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 #section-title-flex h4 {
@@ -144,4 +149,8 @@ header {
 
 .section-cards-container p {
   font-size: 0.8rem;
+}
+
+#article-flex {
+  display: flex;
 }
