@@ -11,6 +11,9 @@ header {
   background-color: #ffc017;
   padding-block: 2rem;
   border-bottom: 1px solid #191919;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 #header-flex {
@@ -36,43 +39,57 @@ header {
 }
 
 #hero-section {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: middle; */
   vertical-align: middle;
   position: relative;
-  height: 380px;
   background-color: #ffc017;
+  border-bottom: 1px solid #191919;
+  height: 380px;
 }
 
 #hero-section img {
   position: absolute;
   top: 0;
-  right: 1rem;
+  right: -0.5rem;
   width: 30rem;
 }
 
 #text {
-  padding-block: 3rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: baseline;
 }
 
 #text h1 {
   font-family: "Spectral";
   font-size: 6rem;
+  font-weight: 500;
 }
 
 #text p {
-  padding-block: 1.2rem;
-  font-size: 1.2rem;
-  width: 40%;
+  font-size: 1.5rem;
+  max-width: 450px;
 }
 
 #text button {
-  margin-block: 1rem;
-  padding-block: 0.5rem;
-  padding-inline: 1.5rem;
   border-radius: 4rem;
+  padding: 0.5rem 2rem;
   background-color: #191919;
   color: white;
   font: inherit;
+}
+
+#section-title {
+  display: flex;
+  align-items: center;
+  padding-block: 2rem;
+}
+
+#section-title h4 {
+  padding-left: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
 }
