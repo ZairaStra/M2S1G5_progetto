@@ -53,7 +53,7 @@ header {
   width: 30rem;
 }
 
-#text {
+#text-flex {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -61,18 +61,18 @@ header {
   align-items: baseline;
 }
 
-#text h1 {
+#text-flex h1 {
   font-family: "Spectral";
   font-size: 6rem;
   font-weight: 500;
 }
 
-#text p {
+#text-flex p {
   font-size: 1.5rem;
   max-width: 450px;
 }
 
-#text button {
+#text-flex button {
   border-radius: 4rem;
   padding: 0.5rem 2rem;
   background-color: #191919;
@@ -80,16 +80,68 @@ header {
   font: inherit;
 }
 
-#section-title {
+#section-title-flex {
   display: flex;
   align-items: center;
   padding-block: 2rem;
 }
 
-#section-title h4 {
+#section-title-flex h4 {
   padding-left: 0.5rem;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.7rem;
   letter-spacing: 0.1rem;
+}
+
+#section-cards-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.section-cards {
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.section-cards h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #dbd8d8;
+}
+
+.author-photo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-block: 0.5rem;
+}
+
+.author-photo img {
+  border-radius: 50%;
+  width: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.author-photo h5 {
+  font-weight: 600;
+}
+
+.section-cards-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-cards-container h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.section-cards-container p {
+  font-size: 0.8rem;
 }
