@@ -1,0 +1,40 @@
+body {
+  font-family: "Roboto";
+  color: #191919;
+}
+.inline-container {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  background-color: #ffc017;
+  padding-block: 2rem;
+  border-bottom: 1px solid #191919;
+}
+
+#header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: middle;
+}
+
+#header-flex img {
+  width: 10rem;
+}
+
+#header-flex nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 1rem;
+}
+
+#header-flex nav ul li:last-child {
+  border-radius: 4rem;
+  background-color: #191919;
+  color: white;
+}
+
+h1 {
+  font-family: "Spectral";
+}
