@@ -57,6 +57,10 @@ header {
   width: 30rem;
 }
 
+#hero-section button {
+  border-style: none;
+}
+
 #text-flex {
   height: 100%;
   display: flex;
@@ -132,11 +136,11 @@ section {
 .author-photo img {
   border-radius: 50%;
   width: 1.5rem;
-  padding-right: 0.5rem;
 }
 
 .author-photo h5 {
   font-weight: 600;
+  padding-left: 0.5rem;
 }
 
 .section-cards-container {
