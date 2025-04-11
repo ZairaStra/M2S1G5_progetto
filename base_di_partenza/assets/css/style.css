@@ -35,6 +35,31 @@ header {
   color: white;
 }
 
-h1 {
+#hero-section {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: middle; */
+  vertical-align: middle;
+  position: relative;
+  height: 480px;
+}
+
+#hero-section img {
+  position: absolute;
+  top: 0;
+  right: -195px;
+  width: 30rem;
+}
+
+#text {
+  padding-block: 3rem;
+}
+
+#text h1 {
   font-family: "Spectral";
+  font-size: 5rem;
+}
+
+#text p {
+  padding-block: 1rem;
 }
