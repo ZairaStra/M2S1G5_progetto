@@ -41,13 +41,14 @@ header {
   align-items: middle; */
   vertical-align: middle;
   position: relative;
-  height: 480px;
+  height: 380px;
+  background-color: #ffc017;
 }
 
 #hero-section img {
   position: absolute;
   top: 0;
-  right: -195px;
+  right: 1rem;
   width: 30rem;
 }
 
@@ -57,9 +58,21 @@ header {
 
 #text h1 {
   font-family: "Spectral";
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 #text p {
-  padding-block: 1rem;
+  padding-block: 1.2rem;
+  font-size: 1.2rem;
+  width: 40%;
+}
+
+#text button {
+  margin-block: 1rem;
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  border-radius: 4rem;
+  background-color: #191919;
+  color: white;
+  font: inherit;
 }
