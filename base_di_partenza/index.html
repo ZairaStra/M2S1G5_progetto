@@ -24,7 +24,7 @@
             <li>Membership</li>
             <li>Write</li>
             <li>Sign In</li>
-            <li id="button">Get Started</li>
+            <li id="last-child">Get Started</li>
           </ul>
         </nav>
       </div>
@@ -283,7 +283,7 @@
     </main>
     <script>
       const header = document.getElementById("header");
-      const button = document.getElementById ("button");
+      const button = document.getElementById ("last-child")
 
       window.addEventListener("scroll", function () {
         if (window.scrollY > 390) {
@@ -291,7 +291,7 @@
           button.classList.add("scrolled-last-child");
         } else {
           header.classList.remove("scrolled");
-          button.classList.remove("scrolled-last-child")
+          button.classList.remove ("scrolled-last-child")
         }
       });
     
