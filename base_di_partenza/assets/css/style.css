@@ -49,7 +49,7 @@ header {
 #hero-section img {
   position: absolute;
   top: 0;
-  right: -0.5rem;
+  right: 0rem;
   width: 30rem;
 }
 
@@ -82,7 +82,7 @@ header {
 
 section {
   border-bottom: 1px solid #dbd8d8;
-  padding: 2.5em;
+  padding-block: 2.5em;
 }
 
 #section-title-flex {
@@ -109,7 +109,6 @@ section {
 .section-cards {
   width: 32%;
   display: flex;
-  justify-content: space-between;
   gap: 1rem;
 }
 
@@ -153,4 +152,62 @@ section {
 
 #article-flex {
   display: flex;
+  gap: 2rem;
+}
+
+.article-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.article-cards img {
+  height: 30%;
+  width: 30%;
+}
+
+.article-cards-text {
+  width: 60%;
+}
+.article-cards-text .author-photo img {
+  width: 1.5rem;
+}
+
+.article-cards-text .author-photo h5 {
+  font-size: 0.8rem;
+}
+
+.article-cards-text h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.article-cards-text p {
+  padding-block: 0.5rem;
+  color: #878a8b;
+}
+
+.article-cards-text .subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #878a8b;
+  font-size: 0.8rem;
+}
+
+.article-cards-text .subtitle .span {
+  border-radius: 4rem;
+  background-color: #d1d0d0;
+}
+
+.article-cards-text .subtitle p img {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: bottom;
+}
+
+.article-cards-text .subtitle img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
