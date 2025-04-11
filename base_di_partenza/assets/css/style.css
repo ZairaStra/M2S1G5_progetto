@@ -14,8 +14,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
+  transition: background color 0.4s;
 }
 
+.scrolled {
+  background-color: white;
+}
 #header-flex {
   display: flex;
   justify-content: space-between;
@@ -255,4 +259,27 @@ aside nav ul {
 aside nav ul li {
   list-style-type: none;
   color: #878a8b;
+}
+
+@media screen and (max-width: 575px) {
+  header {
+    padding: 0.5rem;
+  }
+  #header-flex {
+    justify-content: space-between;
+  }
+  #header-flex nav ul li:nth-child(-n + 3) {
+    display: none;
+  }
+  .inline-container {
+    display: none;
+  }
+
+  #hero-section img {
+    display: none;
+  }
+  #text-flex {
+    padding-inline: 1rem;
+    width: 100%;
+  }
 }

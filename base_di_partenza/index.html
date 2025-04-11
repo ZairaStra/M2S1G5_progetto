@@ -15,7 +15,7 @@
     <title>Progetto settimana 1 modulo 2</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div id="header-flex" class="inline-container">
         <img src="./assets/imgs/svg/logo.svg" alt="Medium-logo" />
         <nav>
@@ -282,5 +282,17 @@
         </div>
       </div>
     </main>
+    <script>
+      const header = document.getElementById("header");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 270) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    
+    </script>
   </body>
 </html>
