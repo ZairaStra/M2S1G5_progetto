@@ -150,6 +150,10 @@ section {
   font-size: 0.8rem;
 }
 
+article {
+  padding-block: 2rem;
+}
+
 #article-flex {
   display: flex;
   gap: 2rem;
@@ -159,7 +163,6 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
 }
 
 .article-cards img {
