@@ -14,12 +14,13 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  transition: background color 0.4s;
+  transition: background-color 0.4s;
 }
 
 .scrolled {
   background-color: white;
 }
+
 #header-flex {
   display: flex;
   justify-content: space-between;
@@ -40,6 +41,11 @@ header {
   border-radius: 4rem;
   background-color: #191919;
   color: white;
+  transition: background-color 0.4s;
+}
+
+.scrolled-last-child {
+  background-color: #1a8917;
 }
 
 #hero-section {

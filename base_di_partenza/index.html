@@ -24,7 +24,7 @@
             <li>Membership</li>
             <li>Write</li>
             <li>Sign In</li>
-            <li>Get Started</li>
+            <li id="button">Get Started</li>
           </ul>
         </nav>
       </div>
@@ -240,8 +240,7 @@
                     Kim Scott
                     </h5>
                   </div>
-                   <h3>
-                    6 Steps for Setting Measurable Goals to Avoid “Productivity Paranoia”
+                   <h3>                    6 Steps for Setting Measurable Goals to Avoid “Productivity Paranoia”
                    </h3>
                    <p>With more people working in remote and hybrid environments than ever before, company, team and individual goals must be explicit and…</p>
                    <div class="subtitle">
@@ -284,12 +283,15 @@
     </main>
     <script>
       const header = document.getElementById("header");
+      const button = document.getElementById ("button");
 
       window.addEventListener("scroll", function () {
-        if (window.scrollY > 270) {
+        if (window.scrollY > 390) {
           header.classList.add("scrolled");
+          button.classList.add("scrolled-last-child");
         } else {
           header.classList.remove("scrolled");
+          button.classList.remove("scrolled-last-child")
         }
       });
     
